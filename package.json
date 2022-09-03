@@ -10,7 +10,7 @@
     "serve": "nuxt-ts serve",
     "lint": "eslint --ext .ts,.js,.vue .",
     "story": "nuxt-ts storybook",
-    "storybookn:build": "nuxt storybook build",
+    "storybookn:build": "nuxt-ts storybook build",
     "storybook": "start-storybook",
     "storybook:build": "build-storybook"
   },
