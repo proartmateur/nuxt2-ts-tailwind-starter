@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt dev",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "export": "nuxt-ts export",
+    "serve": "nuxt-ts serve",
     "lint": "eslint --ext .ts,.js,.vue .",
-    "doc": "nuxt storybook",
-    "serve": "nuxt storybook",
-    "storybook:build": "nuxt storybook build"
+    "story": "nuxt-ts storybook",
+    "storybookn:build": "nuxt storybook build",
+    "storybook": "start-storybook",
+    "storybook:build": "build-storybook"
   },
   "devDependencies": {
     "@nuxt/postcss8": "^1.1.3",
@@ -26,13 +28,17 @@
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/vue": "^6.5.10",
     "autoprefixer": "^10.4.8",
+    "babel-preset-vue": "^2.0.2",
     "core-js": "^3.25.0",
+    "fork-ts-checker-webpack-plugin": "^7.2.13",
     "nuxt": "^2.15.8",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2"
   },
   "dependencies": {
+    "@nuxt/typescript-runtime": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
     "nuxt-property-decorator": "^2.9.1"
   }

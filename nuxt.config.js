@@ -21,8 +21,12 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: {
-    path: '~/components',
-    ignore: '**/*.stories.ts',
+    dirs: [
+      {
+        path: '~/components',
+        ignore: ['**/*.stories.ts'],
+      },
+    ],
   },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
