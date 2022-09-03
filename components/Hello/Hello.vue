@@ -1,10 +1,16 @@
 <template>
-  <div class="font-serif text-[30px] border-2 border-amber-500">{{ text }}</div>
+  <div class="font-serif border-2 border-amber-500">
+    <h2 class="text-[30px]">{{ title }}</h2>
+    <p class="font-sans">{{ text }}</p>
+  </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator';
+import { Component, Prop, Vue } from 'nuxt-property-decorator';
 @Component
 export default class Hello extends Vue {
+  @Prop()
+  title: string;
+
   text = 'JOJOu';
 }
 </script>
