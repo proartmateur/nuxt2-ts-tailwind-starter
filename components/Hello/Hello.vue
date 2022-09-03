@@ -9,7 +9,7 @@ import { Component, Prop, Vue } from 'nuxt-property-decorator';
 @Component
 export default class Hello extends Vue {
   @Prop()
-  title: string;
+  title!: string;
 
   text = 'JOJOu';
 }
