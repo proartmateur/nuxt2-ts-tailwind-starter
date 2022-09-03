@@ -20,7 +20,10 @@ export default {
   plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: {
+    path: '~/components',
+    ignore: '**/*.stories.ts',
+  },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ['@nuxt/typescript-build', '@nuxt/postcss8'],
@@ -48,6 +51,7 @@ export default {
       '@storybook/addon-viewport',
       '@storybook/addon-backgrounds',
       '@storybook/addon-toolbars',
+      '@storybook/preset-typescript',
     ],
   },
 };
