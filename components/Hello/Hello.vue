@@ -5,6 +5,6 @@
 import { Component, Vue } from 'nuxt-property-decorator';
 @Component
 export default class Hello extends Vue {
-  text = 'JOJO';
+  text = 'JOJOu';
 }
 </script>
