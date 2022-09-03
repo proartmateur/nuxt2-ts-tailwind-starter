@@ -24,7 +24,7 @@ export default {
     dirs: [
       {
         path: '~/components',
-        ignore: ['**/*.stories.ts'],
+        ignore: ['**/*.stories.ts', '~/components/**/*.stories.ts'],
       },
     ],
   },
