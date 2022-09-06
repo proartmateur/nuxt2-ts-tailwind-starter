@@ -5,15 +5,15 @@
   </div>
 </template>
 
-<script>
-export default {
-  data: () => ({
-    count: 0,
-  }),
-  methods: {
-    increment() {
-      this.count++;
-    },
-  },
-};
+<script lang="ts">
+import {Component, Prop, Vue} from 'nuxt-property-decorator';
+
+@Component
+export default class Counter extends Vue {
+  count = 0;
+
+  increment() {
+    this.count++;
+  }
+}
 </script>

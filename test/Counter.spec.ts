@@ -8,5 +8,18 @@ test('increments value on click', async () => {
   const button = screen.getByText('increment');
   await fireEvent.click(button);
   await fireEvent.click(button);
-  expect(screen.queryByText('Times clicked: 2')).toBeTruthy();
+  const textExpected = screen.queryByText('Times clicked: 2');
+  expect(textExpected).toBeTruthy();
 });
+
+/*import { shallowMount, mount } from '@vue/test-utils'
+//import HelloWorld from '../HelloWorld.vue'
+import Counter from '@/components/Counter.vue';
+
+describe('HelloWorld.vue', () => {
+  test('renders props.msg when passed', async() => {
+   const wrapper = mount(Counter)
+    await wrapper.find('button').trigger('click')
+  })
+})
+*/
